@@ -94,6 +94,7 @@ body {
 	/* Profile */
 	#profile-summary, #tweet-content {
 		padding: 12px;
+		
 	}
 		#profile-summary .avatar {
 			position: absolute;
@@ -129,6 +130,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			display: none;
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -166,18 +168,31 @@ body {
 		padding-left: 42px;
 	}
 
-	.tweet-actions {
+	.tweet-actions  {
 		text-align: right;
 	}
-		.tweet-actions ul {
-			list-style-type: none;
+	
+		.tweet-actions ul{
+			list-style-type: none;	
+			
 		}
+		
+		.tweet-actions li:hover {
+				display: inline-block;
+				font-size: 12px;
+				color: #2FC2EF;
+				cursor: pointer;
+				margin-right: 2px;
+				opacity: 1;
+			}
+
 			.tweet-actions li {
 				display: inline-block;
 				font-size: 12px;
 				color: #2FC2EF;
 				cursor: pointer;
 				margin-right: 2px;
+				opacity: .3;
 			}
 
 	.icon {
@@ -193,7 +208,9 @@ body {
 
 	.action-reply {
 		background-position: 0 -190px;
+		
 	}
+
 	.action-retweet {
 		background-position: -20px -190px;
 		width: 14px;
@@ -211,6 +228,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none; /*added this*/
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
